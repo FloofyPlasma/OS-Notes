@@ -1,4 +1,3 @@
-
 ---
 title: Roadmap
 description: The roadmap plans for my OS project.
@@ -7,8 +6,9 @@ tags:
   - roadmap
   - draft
 ---
-
 ##### **Phase 1: Bootloader**
+
+*[[Overview|Main Page]]*
 1. Learn the Basics of [Real Mode](https://wiki.osdev.org/Real_Mode):
 	- Understand [BIOS interrupts](https://wiki.osdev.org/BIOS#BIOS_functions) (e.g., `int 13h` for disk I/O, `int 10h` for display).
 	- Study x86 assembly for 16-bit real mode.
@@ -24,6 +24,7 @@ tags:
 	- Setup the Global Descriptor Table ([GDT](https://wiki.osdev.org/Global_Descriptor_Table)).
 
 ##### **Phase 2: Kernel Basics**
+
 1. Set Up the Kernel Environment:
 	- Write the kernel entry point in assembly.
 	- Switch to C for higher-level kernel development.
@@ -36,6 +37,7 @@ tags:
 	- Write interrupt handlers for keyboard input and timer.
 
 ##### **Phase 3: Device Drivers**
+
 1. Keyboard Input:
 	-  Write a driver to capture [keyboard](https://wiki.osdev.org/PS/2_Keyboard) input.
 	- Display typed characters on the screen.
@@ -47,6 +49,7 @@ tags:
 	- Display mouse movements on the screen.
 
 ##### **Phase 4: Userland and File System**
+
 1. Develop a [Simple CLI](https://wiki.osdev.org/Command_Line):
 	- Allow basic user commands (e.g., "help", "reboot").
 	- Handle I/O efficiently.
@@ -55,6 +58,7 @@ tags:
 	- Add support for reading files from disk.
 
 ##### **Phase 5: Advanced Features**
+
 1. [Multi-tasking](https://wiki.osdev.org/Kernel_Multitasking):
 	- Learn about process management and [context switching](https://wiki.osdev.org/Context_Switching).
 	- Implement a [basic scheduler](https://wiki.osdev.org/Processes_and_Threads).
@@ -65,6 +69,7 @@ tags:
 	- Implement basic [networking](https://wiki.osdev.org/Network_Stack) capabilities.
 	
 ##### **Phase 6: Refine and Expand**
+
 1. Polish the OS:
 	- Optimize performance and memory usage.
 	- Refactor code for modularity.
