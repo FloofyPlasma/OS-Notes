@@ -8,7 +8,7 @@ tags:
 ---
 *[[Roadmap|Back to roadmap.]]*
 
-The BIOS follows a simple [[Boot Process|boot process]] when a computer is turned on. Our job is to write the boot loader for the BIOS. It's responsible for loading the OS Kernel into memory. This phase focuses on understanding x86 real mode[^1] and transitioning into protected mode[^2].
+The BIOS follows a simple [[Boot Process|boot process]] when a computer is turned on. Our job is to write the boot loader for the BIOS. It's responsible for loading the OS Kernel into memory. This phase focuses on understanding x86 [[Real Mode|real mode]] and transitioning into protected mode[^1].
 
 ##### Steps for the boot loader:
 
@@ -19,5 +19,4 @@ The BIOS follows a simple [[Boot Process|boot process]] when a computer is turne
 
 Since the bootloader is running in Real Mode, it has easy access to the BIOS. This is where steps like hardware communication (memory detection, file reading, video detection etc.), should take place. Essentially, this prepares the system for Phase 2.
 
-[^1]: https://wiki.osdev.org/Real_Mode
-[^2]: https://wiki.osdev.org/Protected_Mode
+[^1]: https://wiki.osdev.org/Protected_Mode

@@ -9,7 +9,7 @@ tags:
 ##### **Phase 1: Bootloader**
 
 *[[Overview|Main Page]]*
-1. Learn the Basics of [Real Mode](https://wiki.osdev.org/Real_Mode):
+1. Learn the Basics of [[Real Mode]]:
 	- Understand [BIOS interrupts](https://wiki.osdev.org/BIOS#BIOS_functions) (e.g., `int 13h` for disk I/O, `int 10h` for display).
 	- Study x86 assembly for 16-bit real mode.
 2. Write a Simple [Bootloader](https://wiki.osdev.org/Bootloader):

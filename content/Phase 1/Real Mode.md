@@ -10,7 +10,7 @@ tags:
 
 *[[Roadmap|Back to roadmap.]]*
 
-Real Mode[^1] is the first operating mode the CPU uses after booting. While in Real Mode, the CPU is limited up to 1 MB of memory. There is also no memory protection, so faulty programs can freely overwrite any part of memory, including other programs or the OS itself. There is no separation between user-space and kernel-space memory. 
+Real Mode[^1] is the first operating mode the CPU uses after booting. While in Real Mode, the CPU is limited up to 1 MB of memory. There is also no memory protection, so faulty programs can freely overwrite any part of memory, including other programs or the OS itself. There is no separation between user-space and kernel-space memory. The main way of talking to the hardware while in Real Mode is by using [[BIOS Interrupts]].
 
 Memory is accessed using segmentation[^2] using a segment:offset system. Real Mode does not support multitasking or virtual memory. The CPU simply executes one program at a time and lacks the mechanisms to switch between processes safely.
 
