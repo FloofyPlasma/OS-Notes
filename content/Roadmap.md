@@ -10,9 +10,9 @@ tags:
 
 *[[Overview|Main Page]]*
 1. Learn the Basics of [[Real Mode]]:
-	- Understand [BIOS interrupts](https://wiki.osdev.org/BIOS#BIOS_functions) (e.g., `int 13h` for disk I/O, `int 10h` for display).
+	- Understand [[BIOS Interrupts]] (e.g., `int 13h` for disk I/O, `int 10h` for display).
 	- Study x86 assembly for 16-bit real mode.
-2. Write a Simple [Bootloader](https://wiki.osdev.org/Bootloader):
+2. Write a Simple [[Bootloader]]:
 	- Write a program in assembly to display a message (e.g., "Hello, OS!").
 	- Ensure it fits in a 512-byte boot sector.
 	- Compile using AS and link with GCC.
