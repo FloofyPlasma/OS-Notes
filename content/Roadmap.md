@@ -39,7 +39,7 @@ tags:
 ##### **Phase 3: Device Drivers**
 
 1. Keyboard Input:
-	-  Write a driver to capture [keyboard](https://wiki.osdev.org/PS/2_Keyboard) input.
+	- Write a driver to capture [keyboard](https://wiki.osdev.org/PS/2_Keyboard) input.
 	- Display typed characters on the screen.
 2. Display Output:
 	- Start with [VGA text mode](https://wiki.osdev.org/Text_UI) for output.

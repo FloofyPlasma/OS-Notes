@@ -17,7 +17,7 @@ The BIOS follows a simple [[Boot Process|boot process]] when a computer is turne
 - Prepare the CPU and BIOS for the kernel
 - Transfer control to the kernel
 
-Since the bootloader is running in Real Mode, it has easy access to the BIOS. This is where steps like memory detection, file reading, video detection etc., should take place. Essentially, this prepares the system for Phase 2.
+Since the bootloader is running in Real Mode, it has easy access to the BIOS. This is where steps like hardware communication (memory detection, file reading, video detection etc.), should take place. Essentially, this prepares the system for Phase 2.
 
 [^1]: https://wiki.osdev.org/Real_Mode
 [^2]: https://wiki.osdev.org/Protected_Mode
