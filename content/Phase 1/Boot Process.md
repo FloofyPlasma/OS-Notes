@@ -16,5 +16,5 @@ The first stage in the boot process is a power on self test. This is the process
 
 The BIOS then checks the bootable devices for the boot signature magic number. This is located in the first sector which has the byte sequence `0x55AA` at byte offsets 510 and 511. If the BIOS finds this boot sector, it loads it into memory. After its loaded, execution is then transferred to the boot record. On a floppy (which this system is intended to be run from at this current time) all 512 bytes can contain the executable code.
 
-Once the bootloader is loaded, it finds and loads the kernel into memory, and passes control to it.
+Once the [[Bootloader|bootloader]] is loaded, it finds and loads the kernel into memory, and passes control to it.
 

@@ -22,17 +22,17 @@ The bootloader has several steps before its completed:
 
 The bootloader process will be divided into stages, and each stage will have specific responsibilities. Here's a rough outline of my bootloader's structure:
 
-##### **Stage 1: Master Boot Record (MBR)**
+##### **Stage 1: Master Boot Record (MBR)** ✅
 
 The MBR will be contained within the first 512 bytes of the disk.
 
 - Responsibilities of the MBR:
-	- The BIOS will load the first 512 bytes into memory at address `0x7C00` after the [[Boot Process|boot process]] is completed.
-	- The Stage 1 bootloader's primary job is to load the second-stage bootloader from the disk into memory.
-	- Basic hardware initialization will be performed using [[BIOS Interrupts|BIOS interrupts]] (putting the display into text mode).
-	- A simple message will be displayed, something like "Loading Stage 1..."
-	- We will then load the second stage bootloader (placed in sector 2) into memory.
-	- Once we load the second stage, we will transfer control to it by executing a jump into its memory location.
+	- The BIOS will load the first 512 bytes into memory at address `0x7C00` after the [[Boot Process|boot process]] is completed. ✅
+	- The Stage 1 bootloader's primary job is to load the second-stage bootloader from the disk into memory. ✅
+	- Basic hardware initialization will be performed using [[BIOS Interrupts|BIOS interrupts]] (putting the display into text mode). ❌ (Not enough space)
+	- A simple message will be displayed, something like "Loading Stage 1..." ✅
+	- We will then load the second stage bootloader (placed in sector 2) into memory. ✅
+	- Once we load the second stage, we will transfer control to it by executing a jump into its memory location. ✅
 
 To summarize, the BIOS will load our MBR into `0x7C00`. Then we will want to load Stage 2 of our bootloader from disk. A basic message will be printed to the screen, and we will jump to Stage 2.
 
