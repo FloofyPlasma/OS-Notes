@@ -36,17 +36,17 @@ The MBR will be contained within the first 512 bytes of the disk.
 
 To summarize, the BIOS will load our MBR into `0x7C00`. Then we will want to load Stage 2 of our bootloader from disk. A basic message will be printed to the screen, and we will jump to Stage 2.
 
-##### **Stage 2: Main Bootloader**
+##### **Stage 2: Main Bootloader** 🚧
 
 The main bootloader will be located in the first sector after the MBR.
 
 - Responsibilities of Stage 2:
-	- Perform further hardware initialization (setup memory).
-	- Setup the Global Descriptor Table (GDT) for Protected Mode.
-	- Setup interrupt handling for other system services.
-	- Load the Kernel from disk into memory using [[BIOS Interrupts|BIOS interrupts]].
-	- Setup memory paging.
-	- Setup Protected Mode (16-bit → 32-bit)
+	- Perform further hardware initialization (setup memory). ✅
+	- Setup the Global Descriptor Table (GDT) for Protected Mode. ✅
+	- Setup interrupt handling for other system services. ❌
+	- Load the Kernel from disk into memory using [[BIOS Interrupts|BIOS interrupts]]. ❌
+	- Setup memory paging. ✅
+	- Setup Protected Mode (16-bit → 32-bit) ✅
 
 The second stage will get the system closer to being ready for the Kernel, and will load it into memory. It will prepare the GDT, memory pages, and transition the CPU into Protected mode.
 
